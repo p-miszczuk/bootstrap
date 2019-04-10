@@ -49,9 +49,11 @@
 		</div>
 		<div class="col-md-4">
 			<div class="card">
-				<h3 class="card-header">Tytuł klasy z header</h3>
-				<div class="card-body text-justify">
-					<p class='card-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				
+				<img class="card-img" src="pilka.png" alt="Piłka">
+				<div class="card-img-overlay">
+					<h3 class="card-header">Tytuł klasy z header</h3>
+					<p class='card-text text-primary'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -71,14 +73,37 @@
 		</div>
 	</div>
 
-	<h2>karta z zakładkami</h2>
-	<div class="row">
-		<div class="col-md-4"></div>
-		<div class="col-md-4"></div>
-		<div class="col-md-4"></div>		
+	<h2>karta pogrupowana</h2>
+	<div class="card-group">
+  <div class="card">
+    <img class="card-img" src="https://placehold.it/300x150" alt="Obrazek w karcie">
+    <div class="card-body">
+      <h5 class="card-title">Tytuł karty</h5>
+      <p class="card-text">Spicy jalapeno bacon ipsum dolor amet pork loin pastrami filet mignon, andouille bacon pancetta shankle capicola drumstick tri-tip fatback corned beef ground round venison.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img" src="https://placehold.it/300x150" alt="Obrazek w karcie">
+    <div class="card-body">
+      <h5 class="card-title">Tytuł karty</h5>
+      <p class="card-text">Spicy jalapeno bacon ipsum dolor amet pork loin pastrami filet mignon, andouille bacon pancetta shankle capicola drumstick tri-tip fatback corned beef ground round venison. Drumstick boudin capicola spare ribs.</p>
+    </div>
+    <div class="card-footer">
+    	Stopka karty
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img" src="https://placehold.it/300x150" alt="Obrazek w karcie">
+    <div class="card-body">
+      <h5 class="card-title">Tytuł karty</h5>
+      <p class="card-text">Spicy jalapeno bacon ipsum dolor amet pork loin pastrami filet mignon, andouille bacon pancetta shankle capicola drumstick tri-tip fatback corned beef ground round venison. Drumstick boudin capicola spare ribs. Brisket pancetta leberkas chicken, doner drumstick corned beef cow landjaeger t-bone pork loin pork chop tongue.</p>
+    </div>
+  </div>
 	</div>
-
 </div>
+
+
+	
 
 
 
@@ -91,14 +116,21 @@
 .bg-* - kolor tła
 .card-subtitle - podtytuł karty
 .text-muted - tekst wygaszony
-.card-img-top - klasa dodawania obrazka
+.card-img-top - klasa dodawania obrazka na gorze (przed body)
+.card-img-bottom - klasa dodawania obrazka na dole (po body)
 .img-fluid - obrazek stykający sie z obramowaniem karty
+.card-img - obrazek jako tlo karty
+.border-* - zmiana koloru obramowania karty (primary itd)
 .list-group - lista (tworzymy poza card-body)
 .list-group-flush - rozciągnięcie listy
 .list-group-item - elementy listy
 .card-header - nagłówek karty umieszczany poza card-body
 .card-footer - footer klasy umieszczany poza card-body
 .text-* lub .text-*-* - wyrownanie tekstu (1 opcja bez rozmiaru urządzenia, 2 z: justify,center,right,left)
+
+.card-group - grupujemy karty w celu ndania im takiej samej wysokosci, karty nie maja odstepu od siebie
+.card-deck - grupujemy karty w celu nadania im takiej samej wysokosci, karty maja odstęp
+
 
 -->
  
