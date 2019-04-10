@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap - lekcja 5</title>
+
+	<!--Bootstrap links-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style type="text/css">
+
+	
+</style>
+	
+</head>
+<body>
+
+
+<div id="example" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner border" >
+
+  	<ol class="carousel-indicators" >
+  		<li data-target="#example" data-slide-to="0" class="active"></li>
+  		<li data-target="#example" data-slide-to="1"></li>
+  	</ol>
+   
+    <div class="carousel-item active" style="height: 200px;">
+      <img class="d-block h-100" src="nike5.jpg" alt="Pierwszy slajd">
+      <div class="carousel-caption text-secondary">
+      	<h5>Pierwszy slajd</h5>
+      	<p>Opis pierwszego slajdu</p>
+      </div>
+    </div>
+    
+    <div class="carousel-item" style="height: 200px;">
+      <img class="d-block h-100" src="grass1.jpg" alt="Drugi slajd">
+      <div class="carousel-caption text-secondary">
+      	<h5>Drugi slajd</h5>
+      	<p>Opis drugiego slajdu</p>
+      </div>
+    </div>
+  
+  </div>
+
+  <a class="carousel-control-prev" href="#example" role="button" data-slide="prev">
+  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  	<span class="sr-only">Poprzedni</span>
+  </a>
+
+  <a class="carousel-control-next" href="#example" role="button" data-slide="next">
+  	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+  	<span class="sr-only">Następny</span>
+  </a>
+
+</div>
+
+<div class="buttons">
+	<a href="#content" data-toggle='collapse' class="btn btn-primary" aria-controls="content" aria-expanded="false">Show</a> 
+	lub
+	<button class="btn btn-secondary" data-toggle="collapse" data-target="#content" type="button" aria-controls="content" aria-expanded="false">Show 2</button>
+
+</div>
+
+<div class="collapse" id="content">
+	<div class="card card-body">
+		<h2>To jest ukryta tresc</h2>
+		<p>Opis do ukrytej tresci</p>
+	</div>
+</div>
+
+<div id="akordeon-faq">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<a href="#first" data-toggle="collapse" aria-controls="first" aria-expanded="false">Opcja 1</a>
+		</div>
+	
+		<div class="collapse" id="first">
+			<div class="card-body">
+				<p>Pierwsza ukryta tresc</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" role="tab">
+			<a href="#second" data-toggle="collapse" aria-controls="second" aria-expanded="false">Opcja 2</a>
+		</div>
+
+		<div class="collapse" id="second">
+			<div class="card-body">
+				<ol>
+					<li>2.1</li>
+					<li>2.2</li>
+					<li>2.3</li>
+				</ol>
+			</div>
+		</div>
+
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<a href="#third" data-toggle="collapse" aria-controls="third" aria-expanded="false">Opcja 3</a>
+		</div>
+
+		<div class="collapse" id="third">
+			<div class="card-body">
+				<p>Trzeci jakis text nikomu nie potrzebny</p>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+	
+
+
+
+<!--
+//sliders
+.carousel slide - otoczka slidera: pierwszy element od ktorego zaczynamy (slide + carousel-fade tez moze byc lub bez slide z carousel-fade)
+data-ride="carousel" - poruszanie sie sliderow
+.carousel-inner - poczatek dodawania sliderow 
+.carousel-item - pojedynczy slider (div,img itd)
+
+.carousel-control-next/prev - obsluga przyciskow sterowania przejsciem slajdera
+data-slide="next/prev" - kierunek obsługi
+.carousel-control-next/prev-icon - ikony przejsc
+
+.carousel-indicators - znaczniki slidera w tagach ol (ma byc tyle zncznikow li ile slajderow)
+data-slide-to="#" - do jakiego slidera przewinac
+
+.carousel-caption - opis slajdow 
+
+//collapse
+data-toggle="collapse" - ukrywanie i pokazywanie elementu (moze byc w tagu a (przez href) lub button (przez data-target))
+.collapse - klasa + unikalne id w celu ukrycia/pokazania tresci
+-->
+ 
+<!--============================= JAVASCRIPT =======================-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- files js, jquery to bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
