@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap - lekcja 6</title>
+
+	<!--Bootstrap links-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style type="text/css">
+
+	
+</style>
+	
+</head>
+<body>
+
+<!-- 
+	<div class="btn-group">
+		<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">Opcja 1</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item border" href="#">1</a>
+			<a class="dropdown-item border" href="#">2</a>
+			<a class="dropdown-item border" href="#">3</a>
+		</div>
+	</div>	
+
+	
+	<div class="btn-group ml-5">
+		<button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">Opcja 2</button>
+		<div class="dropdown-menu dropdown-menu-right">
+			<a class="dropdown-item" href="#">11</a>
+			<a class="dropdown-item" href="#">12</a>
+		</div>
+	</div>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+    <div class="btn-group dropup">
+		<button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">Opcja 2</button>
+		<div class="dropdown-menu bg-primary">
+			<h6 class="dropdown-header">Nagłówek listy</h6>
+			<a class="dropdown-item" href="#">11</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">12</a>
+		</div>
+	</div> -->
+
+
+<div class="wrapper m-5 bg-secondary w-25 p-2">
+	<form>
+		<!-- input fields -->
+		<div class="form-group">
+			<label class="email" for="e-mail">Wpisz e-mail</label>
+			<input type="email" name="email" id="e-mail" class="form-control form-control-md" placeholder="example@rxample.com">
+			<small id="e-mail" class="form-text text-muted">Tutaj wpisujesz swój e-mail.</small>
+		</div>
+		<div class="form-group">
+			<label class="password" for="pass">Wpisz hasło</label>
+			<input type="password" name="pass" id="pass" class="form-control form-control-md" placeholder="password">
+		</div>
+		<!-- checkbox -->
+		<div class="form-check form-check-inline">
+			<input type="checkbox" name="check-1" class="form-check-input form-check-input" id="check1">
+			<label for="check1" class="form-check-label">Zgoda 1</label>
+		</div>
+		<!-- radio -->
+		<div class="form-check form-check-inline">
+			<input type="radio" name="gender" class="form-check-input" id="radio1">
+			<label id="radio1" class="form-check-label">Mężczyzna</label>
+		</div>
+		<div class="form-check">
+			<input type="radio" name="gender" class="form-check-input" id="radio2">
+			<label id="radio2" class="form-check-label">Kobieta</label>
+		</div>
+		<!-- select -->
+		<div class="form-check">
+			<label class="form-check-label" for="select1">Wybierz kolor</label>
+			<select class="form-control form-control-md" id="select1">
+				<option>Zielony</option>
+				<option disabled="true">Niebieski</option>
+				<option>Fioletowy</option>
+			</select>
+		</div>
+		<!-- select multiple -->
+		<div class="form-check">
+			<label class="form-check-label" for="select2">Wybierz kolor</label>
+			<select multiple class="form-control form-control-md" id="select2">
+				<option>Zielony</option>
+				<option disabled="true">Niebieski</option>
+				<option>Fioletowy</option>
+			</select>
+		</div>
+		<!-- textarea -->
+		<div class="form-group">
+			<label for="textarea">Opis</label>
+			<textarea class="form-control" name="textarea" id="textarea">Wprwadź opis</textarea>			
+		</div>
+
+		<!-- file -->
+		<div class="form-group">
+			<label for="files">Wprowaź plik</label>
+			<input type="file" name="file" id="files" class="form-control-file">
+		</div>
+		<!-- send -->
+		<button type="submit" class="btn btn-primary mt-3 w-100"> Wyślij </button>
+	</form>
+</div>
+
+<div class="wrapper p-5">
+	<form>
+		<div class="form-row">
+			<div class="col-md-6">
+				<label for="imie">Podaj imie</label>
+				<input type="text" name="imie" class="form-control" placeholder="imię" id="imie">
+			</div>
+			<div class="col-md-6">
+				<label for="imie">Podaj nazwisko</label>
+				<input type="text" name="nazwisko" class="form-control" placeholder="imię" id="nazwisko">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="col-md-6">
+				<label for="miasto">Podaj miasto</label>
+				<input type="text" name="miasto" id="miasto" class="form-control" >
+			</div>
+			<div class="col-md-4">
+				<label for="ulica">Podaj ulicę</label>
+				<input type="text" name="ulica" id="ulica" class="form-control" >
+			</div>
+			<div class="col-md-2">
+				<label for="kod">Kod pocztowy</label>
+				<input type="text" name="kod" id="kod" class="form-control">
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- poziomy formularz -->
+
+<div class="wrapper p-5">
+	<form>
+		<div class="form-group row">
+			<label for="imie" class="col-sm-2 col-form-label">Imie</label>
+			<div class="col-sm-10">
+				<input type="text" name="imie" id="imie" class="form-control" placeholder="imie">
+			</div>
+		</div>
+	</form>
+</div>
+
+
+<!--
+//dropdowns/listy rozwijane
+
+.dropdown-toggle - informuje o buttonie ktory ma byc rozwijany
+data-toggle - sposob roziwjanaia listy
+.dropdown-menu - menu
+.dropdown-item - elementy listy
+.btn-group - grupuje btn obok siebie
+.dropup - lista rozwija w gore
+.dropdown-menu-right - menu po prawej stroie buttona
+.dropdown-header - nagłowek listy
+.dropdown-divider - rozdzielenie listy (separator)
+btn-lg - mozemu ustalac wielkosc buttona w zaleznosci od rozdzielczosci
+
+//formularze
+.form-inline - formularze liniowe <form class="form-inline">
+.form-group - rozpoczecia dodawania inputa typu: texarea, text, passwrd, file, email
+.form-control - klasa bez ktroej nie stworzymy inputa
+.form-check - klasa dodawana do inputow: check i radio
+.form-check-inline - wyswietlanie checkboxow w linii
+.form-check-label - klasa dodoawana do etykiety checkboxow
+.form-control-md - mozemy stosowac wielkosci wg rozmiaru
+.form-control-file - klasa dodoawama do inputow "file"
+.form-text - klasa odp za dodatkowy tekst w <small>
+.form-row - formularz oparty na siatce
+.form-group row - poziomy formularz
+.col-form-label - kolumnowy układy labela  	
+.col-auto - automatyczna szerokosc pola
+
+-->
+ 
+<!--============================= JAVASCRIPT =======================-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- files js, jquery to bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
