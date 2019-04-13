@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap - lekcja 8</title>
+
+	<!--Bootstrap links-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style type="text/css">
+
+	
+</style>
+	
+</head>
+<body>
+	<button class="btn btn-primary" data-toggle="modal" data-target="#example">Naduś</button>
+	
+	<!-- modal -->
+	<div class="modal" id="example" role="dialog" >
+
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Tytuł okna</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						x
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+<!-- paginacja -->
+<div class="wrapper m-5">
+	<nav>
+		<ul class="pagination pagination-lg justify-content-center">
+			<li class="page-item disabled"><a class="page-link" href="#">&laquo; Poprzedni</a></li>
+			<li class="page-item active"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Następny &raquo;</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="wraper m-5">
+	<!-- prosty popover -->
+	<button type="button" class="btn btn-lg btn-primary" data-toggle="popover" title="Tytuł okna" data-content="treść wewnątrz naszego okna">Kliknij by wyświetlić</button>
+	
+	<!-- ukrywanie popovera -->
+	<a tabindex="0" class="btn btn-lg btn-danger popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Ukrywany popover" data-content="Kliknij gdzieś poza komunikatem by go zamknąć">Ukrywany popover</a>
+
+
+</div>
+
+
+
+<!--
+//okienka popup / modal
+.modal – wrapper całego modala
+.modal-dialog – wrapper okna modala
+.modal-content – wrapper zawartości modala
+.modal-header – wrapper nagłówka modala
+.modal-title – tytuł w nagłówku modala
+.modal-body – wrapper treści modala
+.modal-footer – wrapper stopki modala
+data-toggle="modal" - dodany do buttona wyswietla modal
+.modal-dialog-centered - wyśrodkowanie modala w pionie 
+.modal-sm - mniejszy modal
+.modal-lg - większy modal
+
+//pagination
+.pagination - wraper paginacji
+.page-item - element paginacji
+.page-link - link paginacji
+.pagination-lg - większy rozmiar paginacji
+.pagination-sm - mniejszy rozmiar paginacji
+.justify-content-center - paginacja na srodku
+.justify-content-end - paginacja po prawej
+
+//Komunikaty / Popovers
+dodajemy do js: jQuery('[data-toggle="popover"]').popover();
+data-toggle="popover" - wyswietlanie okna popover
+ data-placement="*" - polozenie: top, left itd
+ .popover-dismiss - ukrywanie popovera kliknieciem poza buttonem (moze byc inna, zgodna z kodem js)
+tabindex="0" - koniecznie trzeba dodac
+data-trigger="focus" - ukrywamy skupienie elementu
++ kod w js
+
+
+-->
+ 
+<!--============================= JAVASCRIPT =======================-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- files js, jquery to bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+jQuery('[data-toggle="popover"]').popover();
+
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+</script>
+
+</body>
+</html>
