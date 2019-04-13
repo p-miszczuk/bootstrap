@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap - lekcja 9</title>
+
+	<!--Bootstrap links-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style type="text/css">
+
+.wrapper span{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+	
+</style>
+	
+</head>
+<body>
+	
+	<!-- pasek postępu -->
+<div class="wrapp m-5">
+	<div class="progress mb-5">
+		<div class="progress-bar " role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+	</div>
+	<div class="progress" style="height: 40px;">
+		<div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+	</div>
+</div>
+
+<!-- ramki -->
+<div class="wrapper m-5">
+	<span class="border">border</span>
+ 
+	<span class="border-top">border-top</span>
+ 
+	<span class="border-right border-warning">border-right border-warning</span>
+ 
+	<span class="border-bottom">border-bottom</span>
+ 
+	<span class="border-left">border-left</span>
+</div>
+
+<div class="wrapper m-5">
+	<span class="border border-primary rounded"></span>
+	<span class="border border-primary rounded-circle"></span>
+</div>
+
+<!-- clearfix -->
+<div class="bg-info clearfix m-5">
+  <p class="lead float-left p-3">Tekst z floatem do lewej</p>
+  <img src="https://placehold.it/100" class="img-fluid float-right">
+</div>
+
+<!-- close icon -->
+<!-- <div class="wrapper1 m-3">
+	
+	<button type="button" class="close" aria-label="Zamknij">
+	  <span aria-hidden="true">&times;</span>
+	</button>
+
+</div> -->
+
+<div class="wrapper m-3 border border-primary">
+	<div class="embed-responsive embed-responsive-16by9">
+  		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Oh21bzviKgY?rel=0" allowfullscreen></iframe>
+	</div>
+</div>
+
+
+<!--
+//pasek postepu
+.progress - główna klasa paska
+.progress-bar - pasek postępu
+.progress-bar-striped - pasek postępu w paski
+
+//ramki
+.border – dodaje ramki na wszystkich bokach
+.border-top – dodaje ramkę u góry
+.border-right – dodaje ramkę po prawej
+.border-bottom – dodaje ramkę na dole
+.border-left – dodaje ramkę po lewej
+.border-0 – usuwa ramki na wszystkich bokach
+.border-top-0 – usuwa ramkę u góry
+.border-right-0 – usuwa ramkę po prawej
+.border-bottom-0 – usuwa ramkę na dole
+.border-left-0 – usuwa ramkę po lewej
+.rounded – zaokrągla wszystkie boki
+.rounded-top – zaokrągla u góry
+.rounded-right – zaokrągla po prawej
+.rounded-bottom – zaokrągla na dole
+.rounded-left – zaokrągla po lewej
+.rounded-circle – tworzy okrąg
+.rounded-0 – usuwa zaokrąglenia
+
+//clearfix
+.clearfix - klasa
+.float-left
+.float-right
+
+//close
+.close - klasa zamykana wraz z buttonem
+
+//wstawianie filmów youtube
+.embed-responsive - wrapper filmu
+.embed-responsive-item - element np youtube
+w src trzeba zmienic link (dodac embed i ?rel=0)
+.embed-responsive-21by9 – dla obrazu o proporcjach 21:9
+.embed-responsive-16by9 – dla obrazu o proporcjach 16:9 ( standard dla YT )
+.embed-responsive-4by3 – dla obrazu o proporcjach 4:3
+.embed-responsive-1by1 – dla obrazu o proporcjach 1:1
+-->
+ 
+<!--============================= JAVASCRIPT =======================-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- files js, jquery to bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+
+</script>
+
+</body>
+</html>
